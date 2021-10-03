@@ -9,4 +9,7 @@ Uses BDOS just for printing ASCII. The rest is coded bottom-up: routines to 16 b
 
 The code was produced with none other than CP/M's ED in an actual ZX Spectrum +3. There's a submit script to put together the final ASM file, assemle it and generate the final COM binary in one go.
 
-There's plenty of comments in the code. The code itself is far from optimized. Optimization comes next if I don't lose interest first.
+There's plenty of comments in the code.
+
+Fun fact about the division algorithm. There's a long division algorithm implementation, but it's not used. Because the 8080 having only three effective 16-bit registers (BC, DE and HL) it's actually quicker to use iterative substraction because it doesn't require accessing the RAM.
+
